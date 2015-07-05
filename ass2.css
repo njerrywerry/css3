@@ -1,0 +1,34 @@
+div {
+   
+    color: white;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {color: white;}
+    to {color: black;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {color: white;}
+    to {color: black;}
+}
+
+div {
+    width: 100px;
+    height: 120px;
+    background: beige;
+    -webkit-transition: width 2s, height 2s; /* Safari */
+    transition: width 2s, height 2s;
+}
+
+div:hover {
+    width: 500px;
+    
+   
+}
